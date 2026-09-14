@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 194.87.59.6
-  port: 2085
-  udp: true
-  type: vless
-  uuid: ffa722c8-da3f-4371-a0e0-6afcc9f3f93b
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 194.87.59.9
   port: 2085
   udp: true
@@ -22,19 +13,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 123.253.227.238
-  port: 10050
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 194.87.59.6
+  port: 2085
   udp: true
   type: vless
-  uuid: fad78708-a2a3-37a9-8ce7-6bc83526af0d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: U1eMEZpYrlL2SvcFw0efhudE0SSBJ9q5QKCWWEXA53w
-    short-id: 8def87fb30886534
-  servername: www.hp.com
-  client-fingerprint: chrome
+  uuid: ffa722c8-da3f-4371-a0e0-6afcc9f3f93b
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +29,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
