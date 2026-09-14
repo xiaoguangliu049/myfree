@@ -5,20 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 0d3705e9-ba7e-4851-bc32-0719a1866d1b.d9fa5a0f-9b07-4fca-9dd6-8ac47d83c708.byteprivatelink.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 66d0b230-3b09-421d-be15-ad2e27a90c00
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2xX937-HagNcXTIFb6QB8BZPAnbqhKdDN6HH55Xkf3Y
-    short-id: 51c9068f
-  servername: live.douyin.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: ad6ea328-ace0-45e1-8b69-e698536fa709.67dc6e59-0fd8-4ca5-ba29-26a8817e203b.byteprivatelink.com
+  server: 506b696f-183f-4d4c-b381-06dc945a81ba.c65e104a-80a7-476b-baf1-cf753fec1eb7.byteprivatelink.com
   port: 443
   udp: true
   type: vless
@@ -36,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

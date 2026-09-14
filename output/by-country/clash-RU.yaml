@@ -20,19 +20,6 @@ proxies:
   sni: hy.quattro-tech.ru
   skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: app-ss-57.shopping-spb.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: a71ad164-3b29-4dbe-aa66-24d095ca7b6d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dDsLb439UEeGxb-z0NjPGbUR9LvyLZs_SQZNAWKCoHY
-    short-id: a7ecea927dfcdb35
-  servername: assets-ss-57.shopping-spb.com
-  client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 46.8.200.91
   port: 443
   udp: true
@@ -41,21 +28,25 @@ proxies:
   tls: true
   servername: cf3.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: els1.mangshe.xyz
-  port: 2056
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 45.12.75.242
+  port: 26424
   udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
   server: msk.frkn.org
   port: 443
   udp: true
@@ -73,7 +64,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,6 +74,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 rules:
 - MATCH,PROXIES
