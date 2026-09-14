@@ -4,14 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
-  server: 104.24.31.89
+- name: 🇰🇬 KG 01 - xiaohe
+  server: mybb.com
   port: 443
   udp: true
   type: vless
   uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  servername: rayan-007.nastaran.dpdns.org
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
@@ -24,12 +24,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇰🇬 KG 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
+  - 🇰🇬 KG 01 - xiaohe
 rules:
 - MATCH,PROXIES
