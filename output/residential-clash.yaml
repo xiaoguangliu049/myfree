@@ -4,58 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 162.159.198.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: f662295f-e3cf-4064-b766-09e8b58ee25c
-  tls: true
-  servername: 1.lxg001.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: 1.lxg001.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
   server: 36.224.152.189
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇸🇪 瑞典 (Sweden) 03 (移动家宽) - xiaohe
-  server: 170.168.99.8
-  port: 8443
+  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
+- name: 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  server: 57.129.130.57
+  port: 52014
   udp: true
   type: vless
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  uuid: 091ea5fd-4e8d-4459-90af-e4d10179efff
   tls: true
-  reality-opts:
-    public-key: R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0
-  servername: cdn.steamstatic.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
-  server: 210.152.85.154
-  port: 19364
-  udp: true
-  type: vless
-  uuid: 9dc0aa1f-8df6-4d80-b17c-7b92cdfc514d
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /@Marisa_kristifp=chrome
     headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  server: 874e71ae-6c7c-4944-a959-dd6004aab194.ad68289f-02c1-4eeb-83e3-f18114f90c86.byteprivatelink.com
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  server: e28fb658-343a-45b2-8be2-1ca1966b048d.d4d89e60-57f2-478b-bafd-936a2c3183af.smartprivatelink.com
   port: 443
   udp: true
   type: vless
@@ -63,11 +34,11 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: em4y1LNcT6JuLvEa3LoNYikp1vShx4ToM1rhvNe-kSY
-    short-id: c975352f
-  servername: live.douyin.com
+    public-key: -QgMOwO9HekIbLO5Ptcc0FtuwnDKdg-asGq_aNt-Pm0
+    short-id: 84dd2a2e
+  servername: www.douyin.com
   client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
   server: 0d3705e9-ba7e-4851-bc32-0719a1866d1b.d9fa5a0f-9b07-4fca-9dd6-8ac47d83c708.byteprivatelink.com
   port: 443
   udp: true
@@ -80,33 +51,7 @@ proxies:
     short-id: 51c9068f
   servername: live.douyin.com
   client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
-  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 66d0b230-3b09-421d-be15-ad2e27a90c00
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
-    short-id: d369dbc2
-  servername: www.douyin.com
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
-  server: cc56418e-5a4e-428b-904d-d2d8959bbd03.e28fb658-343a-45b2-8be2-1ca1966b048d.smartprivatelink.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 66d0b230-3b09-421d-be15-ad2e27a90c00
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e1L9v1a3tkmHMzrdv9q5-lMXKhTtXcjot8pKFHZD8Vo
-    short-id: c7f12faf
-  servername: mcs.zijieapi.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
   server: ad6ea328-ace0-45e1-8b69-e698536fa709.67dc6e59-0fd8-4ca5-ba29-26a8817e203b.byteprivatelink.com
   port: 443
   udp: true
@@ -124,28 +69,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 (移动家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇸🇪 瑞典 (Sweden) 03 (移动家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 09 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
