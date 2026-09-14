@@ -63,6 +63,11 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/freefq/free/master/v2",
     "https://open.heleimail.workers.dev/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
+    "https://1.lxg2025.dpdns.org/sub?token=e4b87a1557bffe7a5f89867d6ab70366",
+    "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+    "https://1.lxg001.kdns.fr/f662295f-e3cf-4064-b766-09e8b58ee25c/sub",
+    "https://sub.proxygo.org/v2ray.php?key=52c097d28e503b6084b08fb0e9d5ac67",
+    "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
 ]
 
 OUTPUT_DIR = "output"
