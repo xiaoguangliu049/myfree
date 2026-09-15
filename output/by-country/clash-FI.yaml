@@ -12,40 +12,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 65.109.205.148
-  port: 9097
-  udp: true
-  type: vless
-  uuid: Channel:telegram:TurboConfigs
-  network: h2
-  h2-opts:
-    host: []
-    path: /
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 104.16.72.101
-  port: 80
-  udp: true
-  type: vless
-  uuid: d5598622-46b8-b017-3af3-232500000001
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 5.61.91.207
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ec52cb8-8daa-0021-ac36-d38295a25e5b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: a7b2c9d4
-  servername: www.amd.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 185.79.138.71
   port: 448
   udp: true
@@ -57,20 +23,22 @@ proxies:
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 5.61.91.206
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: 151.101.56.6
   port: 443
   udp: true
   type: vless
-  uuid: bd99da97-265e-0021-82cc-4ec009fe9ce2
-  flow: xtls-rprx-vision
+  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
   tls: true
-  reality-opts:
-    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
-    short-id: 0a4b7c3d
-  servername: www.amd.com
+  servername: global.fastly.com
+  skip-cert-verify: true
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kayko.global.ssl.fastly.net
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 31.77.199.182
   port: 443
   udp: true
@@ -83,6 +51,39 @@ proxies:
     short-id: abcd1234
   servername: fi2.yservice.help
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: fr.vpn.legendaah.xyz
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 185.255.179.11
+  port: 9443
+  udp: true
+  type: vless
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  servername: hub-se-02.hanvpn.cc
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: se02-grpc-8e47a
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: fl.windconnect.pro
+  port: 443
+  udp: true
+  type: vless
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI
+    short-id: 3c6ec7b2d73a28b6
+  servername: fl.windconnect.pro
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
