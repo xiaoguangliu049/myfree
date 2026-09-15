@@ -55,19 +55,13 @@ except ImportError as e:
 SOURCE_URLS = [
     "https://wild-cloud-9893.heleimail.workers.dev",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
-    "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
-    "https://raw.githubusercontent.com/10ium/HiN-VPN/main/subscription/base64/mix",
-    "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/protocols/hysteria",
-    "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls",
-    "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
-    "https://raw.githubusercontent.com/freefq/free/master/v2",
-    "https://open.heleimail.workers.dev/",
-    "https://www.ermao.net/sub/v2ray/ermao.net",
-    "https://1.lxg2025.dpdns.org/sub?token=e4b87a1557bffe7a5f89867d6ab70366",
-    "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
-    "https://1.lxg001.kdns.fr/f662295f-e3cf-4064-b766-09e8b58ee25c/sub",
-    "https://sub.proxygo.org/v2ray.php?key=52c097d28e503b6084b08fb0e9d5ac67",
-    "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
+    "https://bestcf.pages.dev/tiancheng/all.txt",
+    "https://bestcf.pages.dev/s5gy/all.txt",
+    "https://bestcf.pages.dev/gslege/Cfxyz.txt",
+    "https://bestcf.pages.dev/zhixuanwang/ipv4-onlyip.txt",
+    "https://bestcf.pages.dev/vvhan/ipv4.txt",
+    "https://bestcf.pages.dev/nirevil/ipv4.txt",
+    "https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestCF/bestcfv4.txt",
 ]
 
 OUTPUT_DIR = "output"
