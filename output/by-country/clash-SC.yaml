@@ -5,7 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  server: 156.226.168.221
+  server: 104.18.34.14
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  server: 172.64.158.146
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  server: 172.67.223.101
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 5a0028f9-c656-cec9-4b61-54678477a408
+  tls: true
+  servername: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  server: 104.16.174.164
+  port: 443
+  udp: true
+  type: vless
+  uuid: 73796e63-0000-4000-8000-000000000000
+  tls: true
+  servername: wireguard.ahmad-kh5716.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: wireguard.ahmad-kh5716.workers.dev
+- name: 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
+  server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
   type: vless
@@ -17,17 +69,41 @@ proxies:
     short-id: e8daed2d
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇸🇨 塞舌尔 (Seychelles) 06 - xiaohe
+  server: 104.21.238.93
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-44890b90d17e
+  tls: true
+  servername: afzoybehu2ws.vtzv4xe1un6s.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/44890b90d17e/loc-0
+    headers:
+      Host: afzoybehu2ws.vtzv4xe1un6s.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 06 - xiaohe
 rules:
 - MATCH,PROXIES

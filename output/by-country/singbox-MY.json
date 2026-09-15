@@ -27,9 +27,30 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
-      "server": "mszz.mangshe.xyz",
+      "server": "56.69.159.191",
+      "server_port": 53271,
+      "uuid": "e8358eb5-7210-4cf8-982f-68af141b7694",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1P58ZYmo81kPDnL4U7SnEUA-aT2R86l-o6dbFXoeDjc",
+          "short_id": "0a9bd9db19578964"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe",
+      "server": "msjp.mangshe.xyz",
       "server_port": 20563,
       "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
       "tls": {
@@ -45,7 +66,8 @@
         "auto",
         "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
         "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe"
       ]
     },
     {
@@ -54,7 +76,8 @@
       "outbounds": [
         "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
         "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
