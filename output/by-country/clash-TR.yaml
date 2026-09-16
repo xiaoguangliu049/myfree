@@ -5,16 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 188.114.98.16
-  port: 2082
+  server: 31.214.152.140
+  port: 443
   udp: true
   type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /rry8le3tt8f3g5j7kr
-    headers:
-      Host: index.harmonica02.workers.dev
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8
+    short-id: 08
+  servername: dw.b-cdn.net
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   server: 156.67.63.231
   port: 443
@@ -28,21 +30,6 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 93.114.98.212
-  port: 443
-  udp: true
-  type: vless
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
-  tls: true
-  servername: kkkk-xcd.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: kkkk-xcd.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  server: 36.133.78.37
+  port: 50017
+  udp: true
+  type: vmess
+  uuid: 9195e0f1-f466-4e69-838f-a95519b5d45e
+  alterId: 0
+  cipher: auto
+- name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
   server: v2ray.simspeedup.com
   port: 80
   udp: true
@@ -21,11 +29,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - xiaohe
+  - 🇹🇭 泰国 (Thailand) 02 - xiaohe
 rules:
 - MATCH,PROXIES
