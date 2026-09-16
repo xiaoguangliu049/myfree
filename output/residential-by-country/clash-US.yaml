@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 172.64.154.8
+  server: peekconfigg.vipserver1-39d.workers.dev
   port: 8080
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /sync
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: peekconfigg.vipserver1-39d.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
