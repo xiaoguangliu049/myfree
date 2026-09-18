@@ -5,20 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 162.159.198.1
-  port: 443
+  server: 172.64.158.146
+  port: 8080
   udp: true
   type: vless
-  uuid: f662295f-e3cf-4064-b766-09e8b58ee25c
-  tls: true
-  servername: 1.lxg001.kdns.fr
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /?ed=2560security=tls
     headers:
-      Host: 1.lxg001.kdns.fr
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
