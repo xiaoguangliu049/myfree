@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - 刘晓光",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - 刘晓光",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - 刘晓光",
       "server": "vj37-1936vtw.fincore.top",
       "server_port": 443,
       "uuid": "5e8e81ac-a1c4-4543-b81e-651bf9872b54",
@@ -15,7 +39,7 @@
         "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -25,106 +49,39 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - 刘晓光",
-      "server": "35.220.207.209",
-      "server_port": 443,
-      "uuid": "90153538-ef08-4942-b8e1-41e7c523e659",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM",
-          "short_id": "56d4e7ae4f86fa39"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - 刘晓光",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
-        "insecure": true
-      }
-    },
-    {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 - 刘晓光",
-      "server": "202.146.222.89",
+      "server": "ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "password": "e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/clashv8🇨🇳",
+        "server_name": "ea87aeb0-tly2o0-tn5bnx-19xg1.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - 刘晓光",
-      "server": "202.146.222.29",
+      "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2",
+        "server_name": "https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3",
         "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 - 刘晓光",
-      "server": "34.92.19.135",
-      "server_port": 443,
-      "uuid": "75d38591-267e-4d89-98bc-164f25b50880",
+      "server": "23.249.18.144",
+      "server_port": 8581,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4",
-          "short_id": "64b3f192fc0669e1"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - 刘晓光",
-      "server": "mz.hkychina.com",
-      "server_port": 8443,
-      "password": "HysTeria2026!Proxy",
-      "tls": {
-        "enabled": true,
-        "server_name": "mz.hkychina.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - 刘晓光",
-      "server": "104.16.60.10",
-      "server_port": 443,
-      "uuid": "cdf5205e-897f-46a7-8d7f-21a61a80b466",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk1.69lover.my",
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -132,41 +89,45 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v2/e2fe4e52a165854d/stream",
+        "path": "/channels/act?ed=2560fp=chrome",
         "headers": {
-          "Host": "hk1.69lover.my"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - 刘晓光",
-      "server": "47.238.210.5",
-      "server_port": 13779,
-      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - 刘晓光",
+      "server": "525b1a38-tly2o0-tn5bnx-19xg1.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
-          "short_id": "af1bdd293097b664"
-        }
+        "server_name": "525b1a38-tly2o0-tn5bnx-19xg1.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - 刘晓光",
+      "server": "mz.hkychina.com",
+      "server_port": 8443,
+      "password": "HysTeria2026!Proxy",
+      "tls": {
+        "enabled": true,
+        "server_name": "mz.hkychina.com",
+        "insecure": false
       }
     },
     {
       "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - 刘晓光",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - 刘晓光",
       "server": "119.246.1.143",
       "server_port": 443,
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
+        "server_name": "t.me%252fripaojiedian",
         "insecure": true
       }
     },
@@ -183,8 +144,7 @@
         "🇭🇰 中国香港 (Hong Kong) 06 - 刘晓光",
         "🇭🇰 中国香港 (Hong Kong) 07 - 刘晓光",
         "🇭🇰 中国香港 (Hong Kong) 08 - 刘晓光",
-        "🇭🇰 中国香港 (Hong Kong) 09 - 刘晓光",
-        "🇭🇰 中国香港 (Hong Kong) 10 - 刘晓光"
+        "🇭🇰 中国香港 (Hong Kong) 09 - 刘晓光"
       ]
     },
     {
@@ -199,8 +159,7 @@
         "🇭🇰 中国香港 (Hong Kong) 06 - 刘晓光",
         "🇭🇰 中国香港 (Hong Kong) 07 - 刘晓光",
         "🇭🇰 中国香港 (Hong Kong) 08 - 刘晓光",
-        "🇭🇰 中国香港 (Hong Kong) 09 - 刘晓光",
-        "🇭🇰 中国香港 (Hong Kong) 10 - 刘晓光"
+        "🇭🇰 中国香港 (Hong Kong) 09 - 刘晓光"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

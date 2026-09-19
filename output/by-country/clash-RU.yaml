@@ -5,19 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - 刘晓光
-  server: 162.159.24.131
-  port: 2052
+  server: 103.31.4.4
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: f662295f-e3cf-4064-b766-09e8b58ee25c
+  tls: true
+  servername: 1.lxg001.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: '/?ed=2560security=tls '
+    path: /?ed=2048
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: 1.lxg001.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - 刘晓光
-  server: 172.64.32.103
-  port: 2082
+  server: 172.64.42.85
+  port: 8080
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -27,73 +31,28 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 03 - 刘晓光
-  server: 162.159.135.234
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: newwk1.f1w.de5.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 04 - 刘晓光
-  server: 199.232.78.160
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1i@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-- name: 🇷🇺 俄罗斯 (Russia) 05 - 刘晓光
   server: 195.133.5.102
   port: 10900
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 895b4b796a357570
-- name: 🇷🇺 俄罗斯 (Russia) 06 - 刘晓光
-  server: 104.245.240.8
-  port: 8443
-  udp: true
-  type: vless
-  uuid: bb20d3fc-fc15-0935-11c5-82775c39e6b0
-  tls: true
-  reality-opts:
-    public-key: -GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28
-  servername: www.epson.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇷🇺 俄罗斯 (Russia) 07 - 刘晓光
+- name: 🇷🇺 俄罗斯 (Russia) 04 - 刘晓光
   server: 130.49.189.158
-  port: 45433
+  port: 43558
   udp: true
-  type: vless
-  uuid: 4ea67585-c211-4358-9173-cbdff7a6aede
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dfJb8gJq6IRsE1KMsfZp5tNLiwBNQMbSl5NF1z5dq3c
-    short-id: 5e101cd5
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08 - 刘晓光
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
+- name: 🇷🇺 俄罗斯 (Russia) 05 - 刘晓光
   server: msk.frkn.org
   port: 443
   udp: true
   type: hysteria2
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - 刘晓光
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 06 - 刘晓光
   server: 46.8.200.91
   port: 443
   udp: true
@@ -107,7 +66,7 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 10 - 刘晓光
+- name: 🇷🇺 俄罗斯 (Russia) 07 - 刘晓光
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -119,14 +78,14 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 11 - 刘晓光
+- name: 🇷🇺 俄罗斯 (Russia) 08 - 刘晓光
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: true
+  sni: itsallproxy.quattro-tech.ru
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -140,9 +99,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - 刘晓光
   - 🇷🇺 俄罗斯 (Russia) 07 - 刘晓光
   - 🇷🇺 俄罗斯 (Russia) 08 - 刘晓光
-  - 🇷🇺 俄罗斯 (Russia) 09 - 刘晓光
-  - 🇷🇺 俄罗斯 (Russia) 10 - 刘晓光
-  - 🇷🇺 俄罗斯 (Russia) 11 - 刘晓光
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -156,8 +112,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - 刘晓光
   - 🇷🇺 俄罗斯 (Russia) 07 - 刘晓光
   - 🇷🇺 俄罗斯 (Russia) 08 - 刘晓光
-  - 🇷🇺 俄罗斯 (Russia) 09 - 刘晓光
-  - 🇷🇺 俄罗斯 (Russia) 10 - 刘晓光
-  - 🇷🇺 俄罗斯 (Russia) 11 - 刘晓光
 rules:
 - MATCH,PROXIES

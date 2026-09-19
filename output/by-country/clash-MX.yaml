@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 比利时 (Belgium) 01 - 刘晓光
-  server: 34.38.82.200
+- name: 🇲🇽 墨西哥 (Mexico) 01 - 刘晓光
+  server: 34.51.23.2
   port: 443
   udp: true
   type: vless
-  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
+  uuid: 79bc7b01-6e4e-4365-a120-fefac8182bd9
   tls: true
   reality-opts:
-    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
-    short-id: 31f187650d9530bb
+    public-key: vFcM44RcbcO5jcrSWHLd_0exXAnnJLhpCNnMrWCwlzI
+    short-id: 65f01b4b99e52015
   servername: www.cloudflare.com
-  client-fingerprint: ''
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 比利时 (Belgium) 01 - 刘晓光
+  - 🇲🇽 墨西哥 (Mexico) 01 - 刘晓光
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 比利时 (Belgium) 01 - 刘晓光
+  - 🇲🇽 墨西哥 (Mexico) 01 - 刘晓光
 rules:
 - MATCH,PROXIES
