@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 104.18.39.218
+- name: 🇺🇸 美国 (United States) 01 (家宽) - 刘晓光
+  server: 172.64.53.55
   port: 8080
   udp: true
   type: vless
@@ -15,29 +15,21 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  server: 36.224.185.173
-  port: 50099
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 刘晓光
+  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  server: 54.179.79.12
-  port: 53646
-  udp: true
-  type: vless
-  uuid: d57b9436-a238-4066-8b11-d23ae57c5982
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  servername: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+    path: /
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - 刘晓光
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
   udp: true
@@ -56,18 +48,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - 刘晓光
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 刘晓光
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - 刘晓光
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 01 (家宽) - 刘晓光
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - 刘晓光
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - 刘晓光
 rules:
 - MATCH,PROXIES

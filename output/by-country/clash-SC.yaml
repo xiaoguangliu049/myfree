@@ -4,7 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
+- name: 🇸🇨 塞舌尔 (Seychelles) 01 - 刘晓光
+  server: 172.64.154.8
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - 刘晓光
+  server: 104.16.0.9
+  port: 443
+  udp: true
+  type: vless
+  uuid: f662295f-e3cf-4064-b766-09e8b58ee25c
+  tls: true
+  servername: 1.lxg001.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: 1.lxg001.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - 刘晓光
   server: 103.175.79.4
   port: 8443
   udp: true
@@ -18,8 +44,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: hk3n.wxgqlfx.vip
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - 刘晓光
+  server: 156.226.168.221
   port: 35193
   udp: true
   type: vless
@@ -30,20 +56,24 @@ proxies:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
     short-id: e8daed2d
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - 刘晓光
+  - 🇸🇨 塞舌尔 (Seychelles) 02 - 刘晓光
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - 刘晓光
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - 刘晓光
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe
-  - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - 刘晓光
+  - 🇸🇨 塞舌尔 (Seychelles) 02 - 刘晓光
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - 刘晓光
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - 刘晓光
 rules:
 - MATCH,PROXIES

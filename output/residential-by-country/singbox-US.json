@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "104.18.39.218",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - 刘晓光",
+      "server": "172.64.53.55",
       "server_port": 8080,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
@@ -22,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🇺🇸 美国 (United States) 01 (家宽) - 刘晓光"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🇺🇸 美国 (United States) 01 (家宽) - 刘晓光"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
