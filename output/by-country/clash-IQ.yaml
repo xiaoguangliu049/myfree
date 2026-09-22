@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.105.166
-  port: 443
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 185.255.179.11
+  port: 9443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
   tls: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
+  servername: hub-de-03.hanvpn.cc
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /de03-ws-8e47a
     headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
+      Host: hub-de-03.hanvpn.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES

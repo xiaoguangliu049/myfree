@@ -4,27 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-48493148ec15",
-      "tls": {
-        "enabled": true,
-        "server_name": "cgzdynepurqs.mercury061.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/48493148ec15",
-        "headers": {
-          "Host": "cgzdynepurqs.mercury061.workers.dev"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
       "server": "172.233.14.17",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -35,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
