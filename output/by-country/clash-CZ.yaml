@@ -5,64 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 172.67.141.75
+  server: cepchik.nxxzxaw.beer
   port: 443
   udp: true
   type: vless
-  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
   tls: true
-  servername: frosty-pond-7436.shhabbyat914.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /NmrU9ImDG7jA7oFEem
-    headers:
-      Host: frosty-pond-7436.shhabbyat914.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 104.18.216.180
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 845bd981-8725-4f9e-9ae8-6f500ec84001
-  tls: true
-  servername: w2r2hnwmlm-p33c1-vnwd.hameddsharabi.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /vl/n4iEhIlCgZ2KerLvX8CLDGWraBrBwAq?ed=2560
-    headers:
-      Host: w2r2hnwmlm-p33c1-vnwd.hameddsharabi.workers.dev
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 172.66.47.132
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  reality-opts:
+    public-key: WU5baXUzRH9BceiYI8MPBmDMEloTFImx2vvE5uh1yjM
+    short-id: f19e02a2fb573c18
+  servername: cepchik.nxxzxaw.beer
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
