@@ -6,20 +6,20 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "www.shopify.com",
-      "server_port": 443,
-      "uuid": "3aa71202-a099-49c1-99fc-6662f3335369",
+      "server": "172.67.167.78",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "yoga-suggesting-recording-calls.trycloudflare.com",
+        "server_name": "v2ray1.dozapp.xyz",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/3aa71202-a099-49c1-99fc-6662f3335369-vm",
+        "path": "/lMnsZUN4/",
         "headers": {
-          "Host": "yoga-suggesting-recording-calls.trycloudflare.com"
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
