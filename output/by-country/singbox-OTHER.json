@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "188.114.97.6",
+      "server": "172.67.200.222",
       "server_port": 443,
-      "uuid": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
+      "uuid": "7700ff6d-cefb-4768-a806-ec4f63fe3b38",
       "tls": {
         "enabled": true,
-        "server_name": "server9.9966338.xyz",
+        "server_name": "3-m13.4b49f101-6328-41c6-953d-00ceb79b58ac.kdns.fr",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/imnotarealherox",
+        "path": "/ED3ZQPu7lqyeDGD58KabZ",
         "headers": {
-          "Host": "server9.9966338.xyz"
+          "Host": "3-m13.4b49f101-6328-41c6-953d-00ceb79b58ac.kdns.fr"
         }
       }
     },
