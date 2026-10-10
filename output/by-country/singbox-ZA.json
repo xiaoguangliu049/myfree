@@ -60,14 +60,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇿🇦 南非 (South Africa) 05 - 刘晓光",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16266,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -75,8 +67,7 @@
         "🇿🇦 南非 (South Africa) 01 - 刘晓光",
         "🇿🇦 南非 (South Africa) 02 - 刘晓光",
         "🇿🇦 南非 (South Africa) 03 - 刘晓光",
-        "🇿🇦 南非 (South Africa) 04 - 刘晓光",
-        "🇿🇦 南非 (South Africa) 05 - 刘晓光"
+        "🇿🇦 南非 (South Africa) 04 - 刘晓光"
       ]
     },
     {
@@ -86,8 +77,7 @@
         "🇿🇦 南非 (South Africa) 01 - 刘晓光",
         "🇿🇦 南非 (South Africa) 02 - 刘晓光",
         "🇿🇦 南非 (South Africa) 03 - 刘晓光",
-        "🇿🇦 南非 (South Africa) 04 - 刘晓光",
-        "🇿🇦 南非 (South Africa) 05 - 刘晓光"
+        "🇿🇦 南非 (South Africa) 04 - 刘晓光"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

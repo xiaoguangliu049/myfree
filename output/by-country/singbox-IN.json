@@ -4,8 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 01 - 刘晓光",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - 刘晓光",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -14,7 +25,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,7 +36,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - 刘晓光",
+      "tag": "🇮🇳 印度 (India) 03 - 刘晓光",
       "server": "148.113.5.44",
       "server_port": 443,
       "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
@@ -45,42 +56,13 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 03 - 刘晓光",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 04 - 刘晓光",
-      "server": "ruot.ayucloudservices.nl",
-      "server_port": 21187,
-      "method": "aes-256-gcm",
-      "password": "bd962c9a-d6f2-4561-bd80-34206c4d5279"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 05 - 刘晓光",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - 刘晓光",
         "🇮🇳 印度 (India) 02 - 刘晓光",
-        "🇮🇳 印度 (India) 03 - 刘晓光",
-        "🇮🇳 印度 (India) 04 - 刘晓光",
-        "🇮🇳 印度 (India) 05 - 刘晓光"
+        "🇮🇳 印度 (India) 03 - 刘晓光"
       ]
     },
     {
@@ -89,9 +71,7 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01 - 刘晓光",
         "🇮🇳 印度 (India) 02 - 刘晓光",
-        "🇮🇳 印度 (India) 03 - 刘晓光",
-        "🇮🇳 印度 (India) 04 - 刘晓光",
-        "🇮🇳 印度 (India) 05 - 刘晓光"
+        "🇮🇳 印度 (India) 03 - 刘晓光"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

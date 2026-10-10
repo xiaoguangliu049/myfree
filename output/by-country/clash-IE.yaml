@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - 刘晓光
-  server: 3.253.106.233
+  server: adapting-basilisk.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: loved-shark.rooster465.autos
+  sni: adapting-basilisk.rooster465.autos
   skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - 刘晓光
   server: master-possum.rooster465.autos
@@ -19,17 +19,17 @@ proxies:
   type: trojan
   password: UX82473651
   sni: master-possum.rooster465.autos
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - 刘晓光
-  server: 3.255.76.207
+  server: 3.253.106.233
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: 3.255.76.207
-  skip-cert-verify: true
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 04 - 刘晓光
-  server: 34.242.77.118
+  server: sacred-anemone.rooster465.autos
   port: 443
   udp: true
   type: trojan
@@ -37,21 +37,13 @@ proxies:
   sni: sacred-anemone.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 05 - 刘晓光
-  server: adapting-basilisk.rooster465.autos
+  server: 3.255.76.207
   port: 443
   udp: true
   type: trojan
-  password: UX82473651
-  sni: adapting-basilisk.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 爱尔兰 (Ireland) 06 - 刘晓光
-  server: v4.hdacd.com
-  port: 30804
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
+  password: Trojan@82164024
+  sni: ie.tronsg.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +54,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - 刘晓光
   - 🇮🇪 爱尔兰 (Ireland) 04 - 刘晓光
   - 🇮🇪 爱尔兰 (Ireland) 05 - 刘晓光
-  - 🇮🇪 爱尔兰 (Ireland) 06 - 刘晓光
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,6 +64,5 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - 刘晓光
   - 🇮🇪 爱尔兰 (Ireland) 04 - 刘晓光
   - 🇮🇪 爱尔兰 (Ireland) 05 - 刘晓光
-  - 🇮🇪 爱尔兰 (Ireland) 06 - 刘晓光
 rules:
 - MATCH,PROXIES

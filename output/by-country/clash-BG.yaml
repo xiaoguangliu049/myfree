@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - 刘晓光
   server: 213.183.63.60
-  port: 9030
+  port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
+  password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - 刘晓光
   server: 213.183.63.60
   port: 9061
@@ -20,25 +20,25 @@ proxies:
   password: 4R3hUfZ2FHhDmNcP
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - 刘晓光
   server: 213.183.63.60
-  port: 9098
+  port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
+  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - 刘晓光
   server: 213.183.63.60
-  port: 9054
+  port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
+  password: GeregetR8cvQHzYr
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - 刘晓光
   server: 213.183.63.60
-  port: 9066
+  port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - 刘晓光
   server: 213.183.63.60
   port: 9049
@@ -48,26 +48,19 @@ proxies:
   password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - 刘晓光
   server: 213.183.63.60
-  port: 9085
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 08 - 刘晓光
-  server: 213.183.63.60
-  port: 9028
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - 刘晓光
   server: 213.183.63.60
   port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - 刘晓光
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - 刘晓光
   server: 136.175.82.85
   port: 18775
   udp: true
@@ -80,14 +73,21 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 11 - 刘晓光
-  server: 93.152.223.201
-  port: 443
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - 刘晓光
+  server: 194.226.121.119
+  port: 2087
   udp: true
-  type: trojan
-  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
-  sni: ger2.fytpn.com
-  skip-cert-verify: false
+  type: vless
+  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
+  tls: true
+  reality-opts:
+    public-key: sXOLkj_L8EpGL0yZA9laLDaPfpwVEcBVHLSvunPVQwA
+    short-id: a644f94155c87551
+  servername: www.apple.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,7 +103,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - 刘晓光
   - 🇧🇬 保加利亚 (Bulgaria) 09 - 刘晓光
   - 🇧🇬 保加利亚 (Bulgaria) 10 - 刘晓光
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - 刘晓光
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -119,6 +118,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - 刘晓光
   - 🇧🇬 保加利亚 (Bulgaria) 09 - 刘晓光
   - 🇧🇬 保加利亚 (Bulgaria) 10 - 刘晓光
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - 刘晓光
 rules:
 - MATCH,PROXIES

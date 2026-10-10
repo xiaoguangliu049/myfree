@@ -5,6 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - 刘晓光
+  server: 94.143.231.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 瑞典 (Sweden) 02 - 刘晓光
+  server: 144.31.62.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: de2.srv.vbuste.ru
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 03 - 刘晓光
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -15,50 +43,10 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 02 - 刘晓光
-  server: 13.143.174.146
-  port: 2080
-  udp: true
-  type: vless
-  uuid: 0783c6fc-16a8-46ff-a408-a099d2f6f3ac
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: A2-_TVXJkWh9CZ7aD4NT9CsfAalIAn9r3BYXNJ3vhlc
-    short-id: 6ee75d75c8607846
-  servername: www.yahoo.com
-  client-fingerprint: edge
-- name: 🇸🇪 瑞典 (Sweden) 03 - 刘晓光
-  server: swidenlanzerotte.live
-  port: 443
-  udp: true
-  type: vless
-  uuid: 56de13ac-086e-4789-8e1e-1bf2bd90216b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
-  servername: swidenlanzerotte.live
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 04 - 刘晓光
-  server: 94.143.231.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +55,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - 刘晓光
   - 🇸🇪 瑞典 (Sweden) 02 - 刘晓光
   - 🇸🇪 瑞典 (Sweden) 03 - 刘晓光
-  - 🇸🇪 瑞典 (Sweden) 04 - 刘晓光
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,6 +63,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - 刘晓光
   - 🇸🇪 瑞典 (Sweden) 02 - 刘晓光
   - 🇸🇪 瑞典 (Sweden) 03 - 刘晓光
-  - 🇸🇪 瑞典 (Sweden) 04 - 刘晓光
 rules:
 - MATCH,PROXIES

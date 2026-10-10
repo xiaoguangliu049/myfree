@@ -5,78 +5,54 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - 刘晓光
-  server: 104.26.0.1
-  port: 2053
+  server: 172.67.131.125
+  port: 443
   udp: true
   type: vless
-  uuid: dce8ca0a-ed26-45c9-9962-38888c19a0ad
+  uuid: 8d0f652c-3caa-4570-a138-668364f3d25e
   tls: true
-  servername: still-scene-fda3.devtahair.workers.dev
+  servername: sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiSDNSSGYxT05LU2VEbyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjYyLjYwLjIxNy4yMzAiXX0=
+    path: /vl/zInkY7qcXuM6P1AZTQ?ed=2560
     headers:
-      Host: still-scene-fda3.devtahair.workers.dev
+      Host: sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 02 - 刘晓光
-  server: 63.141.128.22
-  port: 443
+  server: 146.70.61.18
+  port: 8080
   udp: true
-  type: vless
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
-  tls: true
-  servername: misty-tooth-78ca.fobogah414-e7b.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: misty-tooth-78ca.fobogah414-e7b.workers.dev
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 03 - 刘晓光
-  server: 188.114.97.6
-  port: 443
+  server: 146.70.61.37
+  port: 8080
   udp: true
-  type: vless
-  uuid: a69042da-c285-4c30-a167-5b6bbf6e44ec
-  tls: true
-  servername: task-run-da7249-ntr.zeus-9hjofa.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vl/pxq02Q96G5ESCkI7XVcj?ed=2560
-    headers:
-      Host: task-run-da7249-ntr.zeus-9hjofa.workers.dev
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 04 - 刘晓光
-  server: 172.66.44.124
-  port: 8443
+  server: 78.129.252.65
+  port: 17096
   udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  type: ss
+  cipher: aes-128-gcm
+  password: 7c55c080c3949e03f1a6a559a9851c68
 - name: 🇬🇧 英国 (United Kingdom) 05 - 刘晓光
-  server: 149.102.132.184
+  server: 149.102.149.207
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  password: LXchLsIwtCeUAUgu
 - name: 🇬🇧 英国 (United Kingdom) 06 - 刘晓光
-  server: 149.102.132.184
+  server: 149.102.149.207
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  password: LXchLsIwtCeUAUgu
 - name: 🇬🇧 英国 (United Kingdom) 07 - 刘晓光
   server: 51.77.225.200
   port: 8388
@@ -85,12 +61,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: zRZNBszYyWo5
 - name: 🇬🇧 英国 (United Kingdom) 08 - 刘晓光
-  server: 78.129.252.65
-  port: 17096
+  server: 149.102.132.184
+  port: 443
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: 7c55c080c3949e03f1a6a559a9851c68
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 09 - 刘晓光
   server: 141.98.101.181
   port: 443
@@ -99,32 +75,13 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 10 - 刘晓光
-  server: 51.89.194.151
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
-  tls: true
-  reality-opts:
-    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
-    short-id: d051f678212f9d54
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 11 - 刘晓光
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 12 - 刘晓光
-  server: 149.102.149.207
+  server: 149.102.132.184
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 13 - 刘晓光
+  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 11 - 刘晓光
   server: 23.81.34.204
   port: 443
   udp: true
@@ -136,8 +93,8 @@ proxies:
     public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
     short-id: b19b017d6f453873
   servername: speed.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 14 - 刘晓光
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 12 - 刘晓光
   server: 164.37.100.195
   port: 443
   udp: true
@@ -149,31 +106,27 @@ proxies:
     public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
     short-id: 2e124af254a65e7c
   servername: tomaz1337shellbuy.vvzzkontaktezzvv.garden
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 15 - 刘晓光
-  server: 146.70.23.32
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 16 - 刘晓光
-  server: 146.70.61.18
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 17 - 刘晓光
-  server: node-uk.connectsuite.org
-  port: 8443
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 13 - 刘晓光
+  server: 186.190.211.188
+  port: 443
   udp: true
   type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   tls: true
-  servername: node-uk.connectsuite.org
-  skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 18 - 刘晓光
+  servername: 186.190.211.188
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 14 - 刘晓光
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇬🇧 英国 (United Kingdom) 15 - 刘晓光
   server: 5.199.0.226
   port: 443
   udp: true
@@ -188,6 +141,39 @@ proxies:
     path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
     headers:
       Host: rnxq-1lpi3m.linmeisoft.com
+- name: 🇬🇧 英国 (United Kingdom) 16 - 刘晓光
+  server: 146.70.23.32
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 17 - 刘晓光
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 18 - 刘晓光
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
 - name: 🇬🇧 英国 (United Kingdom) 19 - 刘晓光
   server: 57.129.132.223
   port: 80
@@ -200,8 +186,65 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
+      Host: 57.129.132.223
 - name: 🇬🇧 英国 (United Kingdom) 20 - 刘晓光
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇬🇧 英国 (United Kingdom) 21 - 刘晓光
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇬🇧 英国 (United Kingdom) 22 - 刘晓光
+  server: 18.168.148.212
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: gb.tronsg.com
+  skip-cert-verify: false
+- name: 🇬🇧 英国 (United Kingdom) 23 - 刘晓光
+  server: 31.76.62.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8e66d40e-6f62-4243-a7d8-ebe83e4c2e77
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: C4kK4uxh9a5ym0-JmcaTwkUwkB0FTRjSAIlHLTKRHlo
+    short-id: 84341e3e
+  servername: lv-rix-1.koolb.org
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 24 - 刘晓光
+  server: 46.250.250.149
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  tls: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 25 - 刘晓光
   server: 95.85.224.51
   port: 443
   udp: true
@@ -214,93 +257,43 @@ proxies:
     short-id: a696de84963656de
   servername: max.ru
   client-fingerprint: qq
-- name: 🇬🇧 英国 (United Kingdom) 21 - 刘晓光
-  server: 186.190.211.67
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: pahobac.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: pahobac.org
-- name: 🇬🇧 英国 (United Kingdom) 22 - 刘晓光
-  server: gb.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: gb.tronsg.com
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 23 - 刘晓光
-  server: 94.156.250.148
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇬🇧 英国 (United Kingdom) 24 - 刘晓光
-  server: 149.102.149.207
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 25 - 刘晓光
-  server: 46.250.250.149
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  tls: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 26 - 刘晓光
-  server: 46.250.240.80
+  server: 51.89.194.151
   port: 2053
   udp: true
   type: vless
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
   tls: true
   reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-    short-id: 4cc9dc65f7770115
-  servername: www.cloudflare.com
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+    short-id: d051f678212f9d54
+  servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 27 - 刘晓光
   server: 107.181.151.241
   port: 443
   udp: true
   type: vless
-  uuid: 106d20f6-d70a-40e2-b69b-8e82baf8d117
+  uuid: 317bc783-340f-453c-afb5-b6bf637c0b23
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 60500a63ad12
-  servername: www.microsoft.com
+    short-id: fc994ae7eb10
+  servername: www.tradingview.com
   client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 28 - 刘晓光
   server: 107.181.151.39
   port: 443
   udp: true
   type: vless
-  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
+  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: bbcab8fa80a3
-  servername: www.microsoft.com
+    short-id: 87f895f23064
+  servername: www.techradar.com
   client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 29 - 刘晓光
   server: 87.239.249.137
@@ -314,39 +307,32 @@ proxies:
     public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
     short-id: 91af08b1ce1f
   servername: www.foxsports.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 30 - 刘晓光
-  server: 51.38.71.51
-  port: 2083
+  server: gw1.edgemedia.lol
+  port: 8443
   udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+  type: vless
+  uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: d2061bb1
+  servername: ya.ru
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 31 - 刘晓光
-  server: 104.238.2.82
-  port: 443
+  server: 23.81.36.148
+  port: 1222
   udp: true
   type: vless
-  uuid: d806a58b-33aa-42e0-b170-395e49c16b37
-  flow: xtls-rprx-vision
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
   tls: true
   reality-opts:
-    public-key: Y0noOXC8qHmbM0GmDpj-9BBwKSOtHs-uMbNfKU050GQ
-    short-id: b558b9305a0b
-  servername: www.microsoft.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 32 - 刘晓光
-  server: 40.120.36.23
-  port: 26460
-  udp: true
-  type: vless
-  uuid: 234ff65c-35e8-4ff6-a1e7-cce6acb2f3e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rnykCyLboP7HiOwx0Tfo5OSUVaJXbSMOB9MKkEZ_Xh8
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: www.forvo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -383,7 +369,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 29 - 刘晓光
   - 🇬🇧 英国 (United Kingdom) 30 - 刘晓光
   - 🇬🇧 英国 (United Kingdom) 31 - 刘晓光
-  - 🇬🇧 英国 (United Kingdom) 32 - 刘晓光
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -420,6 +405,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 29 - 刘晓光
   - 🇬🇧 英国 (United Kingdom) 30 - 刘晓光
   - 🇬🇧 英国 (United Kingdom) 31 - 刘晓光
-  - 🇬🇧 英国 (United Kingdom) 32 - 刘晓光
 rules:
 - MATCH,PROXIES

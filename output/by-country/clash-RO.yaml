@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - 刘晓光
-  server: 77.74.123.98
+  server: 77.74.123.104
   port: 8443
   udp: true
   type: hysteria2
@@ -13,31 +13,6 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - 刘晓光
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - 刘晓光
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: speedtest.tinkoff.ru
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - 刘晓光
-  server: 162.249.125.133
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - 刘晓光
   server: 95.133.247.98
   port: 995
   udp: true
@@ -52,7 +27,17 @@ proxies:
     path: /api/v1
     headers:
       Host: love-paris.roxa.org
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - 刘晓光
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - 刘晓光
+  server: 162.249.125.133
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - 刘晓光
   server: 146.70.124.85
   port: 443
   udp: true
@@ -64,8 +49,8 @@ proxies:
     public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - 刘晓光
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - 刘晓光
   server: 46.28.67.55
   port: 443
   udp: true
@@ -77,7 +62,22 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - 刘晓光
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 185.156.44.99
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - 刘晓光
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select

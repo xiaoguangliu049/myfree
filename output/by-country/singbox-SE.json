@@ -6,6 +6,50 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - 刘晓光",
+      "server": "94.143.231.146",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - 刘晓光",
+      "server": "144.31.62.170",
+      "server_port": 443,
+      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de2.srv.vbuste.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+          "short_id": "4be4110078ebed4a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - 刘晓光",
       "server": "62.60.159.81",
       "server_port": 2053,
       "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
@@ -14,7 +58,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -28,79 +72,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - 刘晓光",
-      "server": "13.143.174.146",
-      "server_port": 2080,
-      "uuid": "0783c6fc-16a8-46ff-a408-a099d2f6f3ac",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "A2-_TVXJkWh9CZ7aD4NT9CsfAalIAn9r3BYXNJ3vhlc",
-          "short_id": "6ee75d75c8607846"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - 刘晓光",
-      "server": "swidenlanzerotte.live",
-      "server_port": 443,
-      "uuid": "56de13ac-086e-4789-8e1e-1bf2bd90216b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swidenlanzerotte.live",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - 刘晓光",
-      "server": "94.143.231.146",
-      "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
-      "tls": {
-        "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/",
-        "headers": {
-          "Host": "sub.merky.top"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - 刘晓光",
         "🇸🇪 瑞典 (Sweden) 02 - 刘晓光",
-        "🇸🇪 瑞典 (Sweden) 03 - 刘晓光",
-        "🇸🇪 瑞典 (Sweden) 04 - 刘晓光"
+        "🇸🇪 瑞典 (Sweden) 03 - 刘晓光"
       ]
     },
     {
@@ -109,8 +87,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - 刘晓光",
         "🇸🇪 瑞典 (Sweden) 02 - 刘晓光",
-        "🇸🇪 瑞典 (Sweden) 03 - 刘晓光",
-        "🇸🇪 瑞典 (Sweden) 04 - 刘晓光"
+        "🇸🇪 瑞典 (Sweden) 03 - 刘晓光"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

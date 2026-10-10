@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - 刘晓光
-  server: 194.87.196.13
+  server: 194.87.196.107
   port: 40440
   udp: true
   type: ss
@@ -37,16 +37,31 @@ proxies:
     public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
     short-id: 9e4eced6e98ed4d4
   servername: github.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 05 - 刘晓光
-  server: 94.198.54.132
-  port: 443
+  server: 193.233.74.6
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 06 - 刘晓光
+  server: 139.28.168.126
+  port: 8080
   udp: true
   type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
+  password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
+  sni: hopp-honkong-new.roxa.org
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - 刘晓光
+- name: 🇷🇺 俄罗斯 (Russia) 07 - 刘晓光
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -58,43 +73,7 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07 - 刘晓光
-  server: 79.174.92.222
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
-  tls: true
-  reality-opts:
-    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
-    short-id: a1b2c3d4
-  servername: m.vk.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
 - name: 🇷🇺 俄罗斯 (Russia) 08 - 刘晓光
-  server: 139.28.168.126
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
-  sni: hopp-honkong-new.roxa.org
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - 刘晓光
-  server: 109.120.181.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: eh.vk.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 10 - 刘晓光
   server: alb1337.zaebalsanoproxyklinus.lol
   port: 28152
   udp: true
@@ -102,6 +81,37 @@ proxies:
   password: 8bd04756-3beb-4348-82c9-d35453df50ce
   sni: alb1337.zaebalsanoproxyklinus.lol
   skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 09 - 刘晓光
+  server: 94.198.54.132
+  port: 443
+  udp: true
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 10 - 刘晓光
+  server: 185.147.27.164
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: user-6a8d949a.noooo.win
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 11 - 刘晓光
+  server: 217.149.30.73
+  port: 8443
+  udp: true
+  type: vless
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: p87u9cOh91BaXsKS-HoCoOUXxHcOwkM6ByTWmz_6b2Y
+    short-id: 0da7e14db353e7d0
+  servername: time.nztvpn.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,6 +127,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - 刘晓光
   - 🇷🇺 俄罗斯 (Russia) 09 - 刘晓光
   - 🇷🇺 俄罗斯 (Russia) 10 - 刘晓光
+  - 🇷🇺 俄罗斯 (Russia) 11 - 刘晓光
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,5 +143,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - 刘晓光
   - 🇷🇺 俄罗斯 (Russia) 09 - 刘晓光
   - 🇷🇺 俄罗斯 (Russia) 10 - 刘晓光
+  - 🇷🇺 俄罗斯 (Russia) 11 - 刘晓光
 rules:
 - MATCH,PROXIES
