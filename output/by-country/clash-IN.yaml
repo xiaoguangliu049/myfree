@@ -4,7 +4,19 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 - xiaohe
+- name: 🇮🇳 印度 (India) 01 - 刘晓光
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 02 - 刘晓光
   server: 148.113.5.44
   port: 443
   udp: true
@@ -16,36 +28,8 @@ proxies:
     public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: 35.244.28.130
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: tttyder.wsone.icu
-  skip-cert-verify: false
-- name: 🇮🇳 印度 (India) 03 - xiaohe
-  server: 34.131.228.210
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: hyfuuf6.wsone.icu
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 05 - xiaohe
+- name: 🇮🇳 印度 (India) 03 - 刘晓光
   server: 152.67.8.205
   port: 80
   udp: true
@@ -56,40 +40,39 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇮🇳 印度 (India) 06 - xiaohe
-  server: 152.67.8.205
-  port: 80
+- name: 🇮🇳 印度 (India) 04 - 刘晓光
+  server: ruot.ayucloudservices.nl
+  port: 21187
   udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
+  type: ss
+  cipher: aes-256-gcm
+  password: bd962c9a-d6f2-4561-bd80-34206c4d5279
+- name: 🇮🇳 印度 (India) 05 - 刘晓光
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 - xiaohe
-  - 🇮🇳 印度 (India) 02 - xiaohe
-  - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
+  - 🇮🇳 印度 (India) 01 - 刘晓光
+  - 🇮🇳 印度 (India) 02 - 刘晓光
+  - 🇮🇳 印度 (India) 03 - 刘晓光
+  - 🇮🇳 印度 (India) 04 - 刘晓光
+  - 🇮🇳 印度 (India) 05 - 刘晓光
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 - xiaohe
-  - 🇮🇳 印度 (India) 02 - xiaohe
-  - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
-  - 🇮🇳 印度 (India) 06 - xiaohe
+  - 🇮🇳 印度 (India) 01 - 刘晓光
+  - 🇮🇳 印度 (India) 02 - 刘晓光
+  - 🇮🇳 印度 (India) 03 - 刘晓光
+  - 🇮🇳 印度 (India) 04 - 刘晓光
+  - 🇮🇳 印度 (India) 05 - 刘晓光
 rules:
 - MATCH,PROXIES
